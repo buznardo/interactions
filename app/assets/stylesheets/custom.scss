@@ -1,0 +1,77 @@
+html, input, textarea, button, select {
+  font-family: "proxima nova";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #424246;
+  font-size: 14px;
+}
+
+body { margin: 0; -webkit-user-select: none; }
+
+.action {
+  cursor: pointer;
+  &:hover {
+    color: #18c;
+    text-decoration: underline;
+  }
+}
+
+#script-generator {
+  margin: 30px;
+  border-radius: 3px;
+  height: 200px;
+  width: 400px;
+  border: 1px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  outline: 0;
+  padding: 20px;
+  resize: none;
+  cursor: default;
+  &:hover {
+    border-color: #ccc;
+  }
+  div {
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+    &:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+  }
+  select {
+    display: inline-block;
+    -webkit-appearance: menulist;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    //font-weight: bold;
+    cursor: text;
+    border: 1px solid #bbb;
+    font-size: 13px;
+    &:hover {
+      background: lighten(#def, 3%);
+    }
+  }
+}
+
+.box {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#box-1 {
+  left: 500px;
+  top: 100px;
+  background: pink;
+}
+
+#box-2 {
+  left: 700px;
+  top: 200px;
+  background: coral;
+}
