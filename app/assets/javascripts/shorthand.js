@@ -212,6 +212,15 @@ See 'README.md' for more details.
 		target = this.findTarget(target, arguments); 
 		target.blur();
 	}
+	
+	// This is a custom script I wrote myself
+	ShortHand.Actions.scrollTo = function(origin, target) {
+		target = this.findTarget(target, arguments);
+		var scroll = target.offset();
+		$("html, body").animate({
+		  scrollTop: scroll.top
+		}, 'fast');
+	}
 
 	ShortHand.Actions.toggle = function(origin, target) {
 		target = this.findTarget(target, arguments);
